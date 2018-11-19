@@ -1,0 +1,19 @@
+.metainfo {
+    padding: 20px;
+    margin: 20px 0px;
+    background-color: #f5f4f4;
+    border-radius: 5px;
+}
+.stats {
+    font-weight: bold;
+}
+.count {
+    font-weight: normal;
+    color: #2dd62d;
+}
+.pagination {
+    padding: 10px 0px;
+}
+.action-btn {
+    margin: 2px;
+}

@@ -1,0 +1,8 @@
+.tickername {
+    cursor: pointer;
+    color: blue;
+}
+
+.tickername:hover {
+    text-decoration: underline;
+}
