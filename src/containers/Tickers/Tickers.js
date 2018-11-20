@@ -60,7 +60,7 @@ class Tickers extends Component {
                 page: page,
                 start: startFrom
             });
-            this.props.history.push({ pathname: '/' + page })
+            this.props.history.push({ pathname: '/crypto' + page })
         });
     }
 
@@ -97,7 +97,7 @@ class Tickers extends Component {
                     <button className="btn btn-success float-right action-btn" onClick={() => this.fetchRecordsByPagination('next')} >Next 100</button>
                 </div>
                 <Route path="/" exact component={table} />
-                <Route path="/:id" exact component={table} />
+                <Route path="/tickers/page/:id" exact component={table} />
                 {this.state.showModal ? <Modal hideModal={this.modalHandler} data={this.state.selectedTicker} /> : null }                
             </Auxiliary>
         );
