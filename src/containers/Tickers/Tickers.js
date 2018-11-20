@@ -60,7 +60,7 @@ class Tickers extends Component {
                 page: page,
                 start: startFrom
             });
-            this.props.history.push({ pathname: '/crypto' + page })
+            this.props.history.push({ pathname: '/tickers/page/' + page })
         });
     }
 
