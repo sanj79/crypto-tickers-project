@@ -6,7 +6,7 @@ import Tickers from './containers/Tickers/Tickers';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/crypto-tickers-project/">
         <div className="container-fluid">
           <Layout>
             <Tickers />
