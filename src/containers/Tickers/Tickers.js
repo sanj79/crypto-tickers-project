@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, withRouter } from 'react-router-dom';
+import { Route, Redirect, withRouter } from 'react-router-dom';
 import Auxiliary from '../../hoc/Auxiliary';
 import Table from './Table/Table';
 import './Tickers.css';
@@ -97,7 +97,8 @@ class Tickers extends Component {
                     <button className="btn btn-success float-right action-btn" onClick={() => this.fetchRecordsByPagination('next')} >Next 100</button>
                 </div>
                 <Route path="/" exact component={table} />
-                <Route path="/tickers/page/:id" component={table} />
+                <Route path="/tickers/page/:id" exact component={table} />
+                <Route render={() => <Redirect to="/" />} />
                 {this.state.showModal ? <Modal hideModal={this.modalHandler} data={this.state.selectedTicker} /> : null }                
             </Auxiliary>
         );
