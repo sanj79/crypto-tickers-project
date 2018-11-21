@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/crypto-tickers-project/static/js/runtime~main.a30cf148.js"
   },
   {
-    "revision": "8f2ca4c038c0362c9860",
-    "url": "/crypto-tickers-project/static/js/main.8f2ca4c0.chunk.js"
+    "revision": "48ae91324aff9071f171",
+    "url": "/crypto-tickers-project/static/js/main.48ae9132.chunk.js"
   },
   {
     "revision": "ee98088a8c26ff76c30e",
     "url": "/crypto-tickers-project/static/js/1.ee98088a.chunk.js"
   },
   {
-    "revision": "8f2ca4c038c0362c9860",
+    "revision": "48ae91324aff9071f171",
     "url": "/crypto-tickers-project/static/css/main.1c73586b.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/crypto-tickers-project/static/css/1.8d621acf.chunk.css"
   },
   {
-    "revision": "a8e5b291e029d7ca644963d74f8a7cc9",
+    "revision": "619ddc6a9d15edc045c61e727d017e6e",
     "url": "/crypto-tickers-project/index.html"
   }
 ];

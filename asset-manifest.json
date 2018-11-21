@@ -1,7 +1,7 @@
 {
   "main.css": "/crypto-tickers-project/static/css/main.1c73586b.chunk.css",
-  "main.js": "/crypto-tickers-project/static/js/main.8f2ca4c0.chunk.js",
-  "main.js.map": "/crypto-tickers-project/static/js/main.8f2ca4c0.chunk.js.map",
+  "main.js": "/crypto-tickers-project/static/js/main.48ae9132.chunk.js",
+  "main.js.map": "/crypto-tickers-project/static/js/main.48ae9132.chunk.js.map",
   "static/css/1.8d621acf.chunk.css": "/crypto-tickers-project/static/css/1.8d621acf.chunk.css",
   "static/js/1.ee98088a.chunk.js": "/crypto-tickers-project/static/js/1.ee98088a.chunk.js",
   "static/js/1.ee98088a.chunk.js.map": "/crypto-tickers-project/static/js/1.ee98088a.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.8d621acf.chunk.css.map": "/crypto-tickers-project/static/css/1.8d621acf.chunk.css.map",
   "static/css/main.1c73586b.chunk.css.map": "/crypto-tickers-project/static/css/main.1c73586b.chunk.css.map",
   "index.html": "/crypto-tickers-project/index.html",
-  "precache-manifest.2e59a1aec1a8ebf068471523d509db4d.js": "/crypto-tickers-project/precache-manifest.2e59a1aec1a8ebf068471523d509db4d.js",
+  "precache-manifest.1b29b0b0ecc2217a9a5e7039a32f6ef2.js": "/crypto-tickers-project/precache-manifest.1b29b0b0ecc2217a9a5e7039a32f6ef2.js",
   "service-worker.js": "/crypto-tickers-project/service-worker.js"
 }
