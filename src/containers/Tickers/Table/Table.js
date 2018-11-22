@@ -19,21 +19,23 @@ const table = (props) => {
 
     return (
         <Auxiliary>
-            <table id="example" className="table table-striped table-bordered dark">
-                <thead>
-                    <tr>
-                        <th onClick={() => props.sort('rank')}>Rank</th>
-                        <th onClick={() => props.sort('name')}>Name</th>
-                        <th onClick={() => props.sort('symbol')}>Symbol</th>
-                        <th onClick={() => props.sort('circulating_supply')}>Circulating Supply ($)</th>
-                        <th onClick={() => props.sort('total_supply')}>Total Supply ($)</th>
-                        <th onClick={() => props.sort('max_supply')}>Max Supply ($)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {tickerdata}
-                </tbody>
-            </table>            
+            <div className="table-responsive">
+                <table id="example" className="table table-bordered dark">
+                    <thead className="thead-light">
+                        <tr>
+                            <th onClick={() => props.sort('rank')}>Rank</th>
+                            <th onClick={() => props.sort('name')}>Name</th>
+                            <th onClick={() => props.sort('symbol')}>Symbol</th>
+                            <th onClick={() => props.sort('circulating_supply')}>Circulating Supply ($)</th>
+                            <th onClick={() => props.sort('total_supply')}>Total Supply ($)</th>
+                            <th onClick={() => props.sort('max_supply')}>Max Supply ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {tickerdata}
+                    </tbody>
+                </table>
+            </div>            
         </Auxiliary>
     );
 }

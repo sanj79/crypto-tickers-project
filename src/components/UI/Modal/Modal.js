@@ -25,7 +25,7 @@ const modal = (props) => {
                         </ul>
                     </div>
                     <div >
-                        <button className="btn btn-info float-right" onClick={() => props.hideModal()}>Close</button>
+                        <button className="btn btn-info float-right close-btn" onClick={() => props.hideModal()}>Close</button>
                     </div>
                 </div>
             </div>

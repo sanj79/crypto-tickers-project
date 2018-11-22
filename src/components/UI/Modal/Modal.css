@@ -52,3 +52,29 @@
     font-weight: normal;
     color: #007bff;
 }
+
+@media screen and (max-width: 500px) {
+
+  .Modal-dialog {
+    width: 98%;
+    padding: 10px;
+  }
+  .ticker-list li {
+    list-style: none;
+    padding: 5px 2px;
+    margin: 5px 0px;
+    font-size: 8px;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .close-btn {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+
+  tr {
+    font-size: 10px;
+  }
+}
