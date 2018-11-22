@@ -19,8 +19,8 @@ class Tickers extends Component {
     }
 
     componentDidMount() {
-        this.getRecords();
-        setInterval(this.getRecords, 1000 * 60);
+        this.fetchRecordsByPagination();
+        setInterval(this.fetchRecordsByPagination, 1000 * 60);
     }
 
     // Fetch Initial Records
@@ -45,7 +45,7 @@ class Tickers extends Component {
         if (direction === 'prev') {
             startFrom = startFrom - 100
             page = page - 1;
-        } else {
+        } else if (direction === 'next'){
             startFrom = startFrom + 100;
             page = page + 1;
         }
@@ -60,6 +60,7 @@ class Tickers extends Component {
                 page: page,
                 start: startFrom
             });
+            this.sortBy(localStorage.getItem('Sort By'));
             this.props.history.push({ pathname: '/tickers/page/' + page })
         });
     }
@@ -67,7 +68,9 @@ class Tickers extends Component {
     sortBy = (parameter) => {
         let data = this.state.tickerdata;
         data.sort((a,b) => (a[parameter] > b[parameter]) ? 1 : ((b[parameter] > a[parameter]) ? -1 : 0));
-        localStorage.setItem('Sort By', parameter);
+        if(parameter !== localStorage.getItem('Sort By')){
+            localStorage.setItem('Sort By', parameter);
+        }
         this.setState({tickerdata: data});
     }
 
@@ -97,8 +100,7 @@ class Tickers extends Component {
                     <button className="btn btn-success float-right action-btn" onClick={() => this.fetchRecordsByPagination('next')} >Next 100</button>
                 </div>
                 <Route path="/" exact component={table} />
-                <Route path="/tickers/page/:id" exact component={table} />
-                <Route render={() => <Redirect to="/" />} />
+                <Route path="/tickers/page/:id" component={table} />
                 {this.state.showModal ? <Modal hideModal={this.modalHandler} data={this.state.selectedTicker} /> : null }                
             </Auxiliary>
         );
